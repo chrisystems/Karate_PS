@@ -27,4 +27,4 @@ Scenario: Successful Transfer
   And param amount = val_amount
   When method POST
   Then status 400
-  And match response == "Could not find account number" + val_fromAccountId_error + " and/or " + val_toAccountId_error
+  And match response == "Could not find account number " + val_fromAccountId_error + " and/or " + val_toAccountId_error
