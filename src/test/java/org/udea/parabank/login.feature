@@ -27,3 +27,4 @@ Feature: Login to Parabank
        "ssn": '#string'
     }
     """
+    And match responseHeaders['CF-RAY'][0] != null
